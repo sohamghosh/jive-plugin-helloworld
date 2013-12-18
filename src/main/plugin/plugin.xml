@@ -1,0 +1,50 @@
+<plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://www.jivesoftware.com/schemas/clearspace/2_5/plugin.xsd">
+    <name>helloworld</name>
+    <description>helloworld</description>
+    <author>Soham</author>
+    <version>1.0.0</version>
+
+    <minServerVersion>6.0.3</minServerVersion>
+    <maxServerVersion>6.0.3</maxServerVersion>
+    
+	<class>org.tw.spike.jive.plugin.HelloWorldPlugin</class>
+
+    <components>
+        <!--<component id="user-bar">-->
+            <!--<tab id="jiveUserMenu5">-->
+                <!--<item id="sayhello" name="Say Hello">-->
+                    <!--<url><![CDATA[<@ww.url action="sayhello" />]]></url>-->
+                <!--</item>-->
+            <!--</tab>-->
+        <!--</component>-->
+        <component id="admin-console">
+            <tab id="system">
+                <section id="section-helloworld" name="Hello"
+                         description="admin.decorator.menu.system.dbQuery.section.desc">
+
+
+                    <item id="helloworld-page" name="Hello"
+                          url="helloworld.jspa"
+                          description="admin.decorator.menu.system.helloworld.item.desc" />
+                </section>
+            </tab>
+        </component>
+    </components>
+
+    <!--
+    <authorURL>
+    <pluginURL>
+    <databaseKey>
+    <databaseVersion>
+    <components>
+    <css>
+    <soy>
+    <javascript>
+    <widget>
+    <macro>
+    <urlmapping>
+    <sitemesh>
+    -->
+
+</plugin>
